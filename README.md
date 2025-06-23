@@ -3,6 +3,7 @@ LFI Scanner V 0.1, permette di controllare un dato URL per potenziali LFI, perme
 
 > Download
 <br>
+
 ` ` ` 
   git clone https://github.com/SSHpectator/LFI-Scanner/
 ` ` ` 
