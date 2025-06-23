@@ -30,9 +30,6 @@ def open_file_payload(path, url, prx):
 poss_lfi = []
 
 def site_prx(url, payloads):
-    ip = urllib.request.urlopen('https://ident.me').read().decode('utf-8')
-    
-    print(f"{bcolors.OKCYAN}\nStai scansionando utilizzando questo IP: {bcolors.BOLD}{ip}{bcolors.ENDC}\n")
     
     http_prx = input(f"\n\n\n{bcolors.WARNING}Inserisci Proxy http: {bcolors.ENDC}")
     https_prx = input(f"\n\n\n{bcolors.WARNING}Inserisci Proxy https: {bcolors.ENDC}")
@@ -40,6 +37,9 @@ def site_prx(url, payloads):
         'http': http_prx,
         'https': https_prx
     }
+
+### TODO
+### MOSTRARE IP PROXIES, PERMETTERE DI USARE UNA LISTA DI IP
 
     for payload in payloads:
         url_targ = url + payload
